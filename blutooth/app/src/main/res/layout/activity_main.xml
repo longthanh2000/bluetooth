@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enable"
+        android:text="Enable"
+        ></CheckBox>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vivible"
+        android:text="Visible"
+        android:layout_alignParentRight="true"
+
+        ></CheckBox>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        ></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_name"
+        android:padding="5dp"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#1a6da4"
+        android:id="@+id/bluetooth"
+        ></ImageView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_view"
+        android:layout_below="@+id/bluetooth"
+        android:cacheColorHint="#fff"
+
+
+
+        ></ListView>
+</RelativeLayout>
